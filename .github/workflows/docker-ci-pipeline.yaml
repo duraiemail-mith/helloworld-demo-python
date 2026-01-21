@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Code Checkout
-        uses: action/checkout@v6
+        uses: actions/checkout@v6
 
       - name: Create Image
         run: docker build -t ${{ vars.DOCKER_USERNAME }}/helloworld-demo-python:v1 .
