@@ -13,15 +13,14 @@ jobs:
       - name: Verify Image
         run: docker images
 
-      - name: sleep
-        run: sleep 20
-
       - name: create container
         run: docker run --name python-app -idt -p 8080:8080 ${{ vars.DOCKER_USERNAME }}/helloworld-demo-python:v1
 
       - name: view container
         run: docker ps
-
+        
+      - name: sleep
+        run: sleep 20
       - name: Curl output
         run: curl -f http://localhost:8080
         
