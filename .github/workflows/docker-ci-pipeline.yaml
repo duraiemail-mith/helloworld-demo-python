@@ -22,7 +22,7 @@ jobs:
       - name: view container
         run: docker ps
 
-      - name: curl command checkout
+      - name: Curl output
         run: curl -f http://localhost:8080
         
       - name: Docker Login
