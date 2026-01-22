@@ -2,9 +2,9 @@ name: Docker CI Pipeline
 on: 
   push:
     paths-ignore:
-      -CONTRIBUTING.md
-      -README.md
-      -LICENSE
+      - CONTRIBUTING.md
+      - README.md
+      - LICENSE
       - .github/workflows/*
 jobs:
   dockerci-job:
