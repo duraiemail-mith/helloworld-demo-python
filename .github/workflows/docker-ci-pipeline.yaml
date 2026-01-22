@@ -1,5 +1,11 @@
 name: Docker CI Pipeline
-on: push
+on: 
+  push:
+    paths-ignore:
+      -CONTRIBUTING.md
+      -README.md
+      -LICENSE
+      - .github/workflows/*
 jobs:
   dockerci-job:
     runs-on: ubuntu-latest
